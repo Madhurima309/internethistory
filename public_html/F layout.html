@@ -8,12 +8,11 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      background-color: #ddd;
     }
-.pic{
-  float: right;
-  margin: 0 0 0 15px;
 
-}
+
+
     .header {
       overflow: hidden;
       background-color: #f1f1f1;
@@ -31,9 +30,17 @@
       border-radius: 4px;
     }
 
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+      background-color: #ddd;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      background-color: #ddd;
     }
 
     .header a:hover {
@@ -41,10 +48,6 @@
       color: black;
     }
 
-    .header a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
 
     .header-right {
       float: right;
@@ -76,7 +79,7 @@
 <body>
 
   <div class="header">
-    <a href="#default" class="logo">IS601 Project</a>
+
     <div class="header-right">
       <a href="index.html">Index</a>
       <a href="invention_of_internet.html">Invention</a>
@@ -89,13 +92,35 @@
 
   <div style="padding-left:20px">
     <h1>The Dot Com Bubble</h1>
-    <p> </p>
+    <div class="row">
+      <div class="column">
+    <p>
+    <ul>
+    <li> Today the internet is not complete without one ability to buy anything and everything on it.
+      We can find almost every product sold online, and it is easy to forget that it was not always
+      the case.</li><br>
+
+    <li>Amazon was launched in the summer of 1995 by Jeff Bezos, it was started thinking in
+      a systematic way about webs unique properties, and what kinds of stuff it would be ideal for
+      selling.</li><br>
+
+    <li>Wall street well and truly had its eye on Amazon due to its success, Amazon stock price doubled, not in a
+      course of a year but within a few weeks. This led to a buying frenzy and was the start of the
+      internet bubble where millions of Americans were suddenly buying stocks for anything with a
+      dot com.</li><br>
+
+  </ul>
+
+
+
+
+      </div>
+
+
+  <div class="column">
+    <img src="/images/mo.jpg" alt="Forest" style="width:100%">
   </div>
-  <div class="pic">
-    <div class="p-4 mb-3 bg-light rounded">
-      <img src="/images/images1.png"  alt="Image about browser wars" width="500" height="500">
-      <p class="mb-0"></p>
-    </div>
+  </div>
   </div>
   <div class="footer">
     <p>&copy; 2021 Madhurima Singh</p>
