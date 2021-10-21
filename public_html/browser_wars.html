@@ -1,18 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ddd;
+        }
+
+
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            background-color: #ddd;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            background-color: #ddd;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+
+        .footer {
+            position: fixed;
+            background-color: #ddd;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<menu id="primaryLinks">
-    <a href="index.html">Index</a> <br>
-    <a href="invention_of_internet.html">Invention</a> <br>
-    <a href="internet_search.html">Search</a><br>
-    <a href="dotcom_bubble.html">Dotcom</a><br>
-    <a href="browser_wars.html">Browsers</a><br>
-    <a href="humans.html">Humans</a><br>
 
-</menu>
+<div class="header">
+
+    <div class="header-right">
+        <a href="index.html">Index</a>
+        <a href="invention_of_internet.html">Invention</a>
+        <a href="internet_search.html">Search</a>
+        <a href="dotcom_bubble.html">Dotcom</a>
+        <a href="browser_wars.html">Browsers</a>
+        <a href="humans.html">Humans</a>
+    </div>
+</div>
+
+<div style="padding-left:20px">
+    <h1>The Dot Com Bubble</h1>
+    <div class="row">
+        <div class="column">
+            <p>
+            <ul>
+                <li> Today the internet is not complete without one ability to buy anything and everything on it.
+                    We can find almost every product sold online, and it is easy to forget that it was not always
+                    the case.</li><br>
+
+                <li>Amazon was launched in the summer of 1995 by Jeff Bezos, it was started thinking in
+                    a systematic way about webs unique properties, and what kinds of stuff it would be ideal for
+                    selling.</li><br>
+
+                <li>Wall street well and truly had its eye on Amazon due to its success, Amazon stock price doubled, not in a
+                    course of a year but within a few weeks. This led to a buying frenzy and was the start of the
+                    internet bubble where millions of Americans were suddenly buying stocks for anything with a
+                    dot com.</li><br>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+        <div class="column">
+            <img src="/images/mo.jpg" alt="coins" style="width:100%">
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>&copy; 2021 Madhurima Singh</p>
+</div>
+
+
 </body>
 </html>
